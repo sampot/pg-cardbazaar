@@ -1,0 +1,19 @@
+# 卡市爭鋒 (`pg-cardbazaar`)
+
+構築＋排位；≠傳統牌桌。
+
+類型：**CCG／構築對戰** · 系列建議：桌遊
+
+## 遊玩
+
+純 HTML／CSS／JavaScript（無 build）。本機開 `index.html` 或經 Playgrounds／go 安裝。
+
+## 開發
+
+```bash
+npx vitest run
+```
+
+## 署名
+
+見 [ATTRIBUTION.md](./ATTRIBUTION.md)。
