@@ -1,1 +1,44 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#19150b"><meta name="description" content="收藏式卡牌"><title>卡市爭鋒</title><link rel="stylesheet" href="./styles.css"></head><body><main><header><div><small>收藏式卡牌</small><h1>卡市爭鋒</h1></div><button id="sound" aria-pressed="true">♫ 音效</button></header><section id="lobby" class="panel hero"><div class="sigil">✦</div><p>一局 5–10 分鐘。系統會把戰績保存到你的場域 KV。</p><p>最佳紀錄 <strong id="best">0</strong></p><button id="start" class="primary">開始新局</button><a href="./ATTRIBUTION.md">製作與署名</a></section><section id="game" hidden><div id="hud" class="hud"></div><section id="board" class="board" aria-label="遊戲盤面"></section><p id="msg" class="msg" aria-live="polite"></p><div id="actions" class="actions"></div></section></main><script type="module" src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#19150b" />
+    <meta name="description" content="卡市構築、攤位購牌、排位對戰。" />
+    <title>卡市爭鋒</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <small>構築＋排位</small>
+          <h1>卡市爭鋒</h1>
+        </div>
+        <button id="sound" class="ghost" type="button" aria-pressed="true">♫ 音效</button>
+      </header>
+
+      <section id="lobby" class="panel hero">
+        <img class="emblem" src="./assets/images/emblem.png" width="64" height="64" alt="" />
+        <p class="lead">在黃昏卡市挑牌、組牌，再進排位對 AI。一局 5–10 分鐘。</p>
+        <ul class="rules">
+          <li>攤位用金幣購牌，牌組 8–20 張</li>
+          <li>對戰：出牌、佔場、結束回合後單位進攻</li>
+          <li>勝場升段位，落敗仍可回市場調整</li>
+        </ul>
+        <p class="record">最高戰功 <strong id="best">0</strong></p>
+        <button id="start" class="primary" type="button">進入卡市</button>
+        <a class="credits-link" href="./ATTRIBUTION.md">製作與署名</a>
+      </section>
+
+      <section id="game" hidden>
+        <div class="hud" id="hud"></div>
+        <p id="msg" class="msg" aria-live="polite"></p>
+        <div id="stage" class="stage"></div>
+        <div id="hand" class="hand" hidden></div>
+        <div id="actions" class="actions"></div>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,8 +1,6 @@
 # 卡市爭鋒 (`pg-cardbazaar`)
 
-構築＋排位；≠傳統牌桌。
-
-類型：**CCG／構築對戰** · 系列建議：桌遊
+構築＋排位對戰；在卡市購牌、組牌，再與 AI 排位交鋒（非傳統牌桌）。
 
 ## 遊玩
 
@@ -13,6 +11,8 @@
 ```bash
 npx vitest run
 ```
+
+Agent 契約見 Playgrounds [`docs/PG-GAME-AGENT-GUIDE.md`](https://github.com/sampot/playgrounds/blob/main/docs/PG-GAME-AGENT-GUIDE.md)。
 
 ## 署名
 
